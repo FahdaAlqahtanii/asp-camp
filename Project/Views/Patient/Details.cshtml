@@ -1,0 +1,11 @@
+﻿@model Patient
+
+@{
+    ViewData["Title"] = "Patient Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Patient's ID: @Model.Id</h4>
+<h4>Patient's Name: @Model.Name</h4>
+<h4>Patient's Visit Date: @Model.VisitDate.ToShortDateString()</h4>
